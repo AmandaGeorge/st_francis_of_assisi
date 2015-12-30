@@ -1,2 +1,3 @@
-# st_francis_of_assisi
-# st_francis_of_assisi
+# St. Francis of Assisi Parish Website
+
+## Web Developer: www.amanda-george.com
