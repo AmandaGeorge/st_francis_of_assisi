@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>St. Francis of Assisi Church</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="print.css" media="print" />
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -13,78 +14,123 @@
 <div id="wrapper"><!-- #wrapper -->
 	
 	<header><!-- header -->
-		<nav><!-- top nav -->
-			<div class="menu">
-				<ul>
-					<li><a href="#">St. Francis of Assisi Church</a></li>
-					<li><a href="#">Mass Times</a></li>
-					<li><a href="#">Reconciliation</a></li>
-					<li><a href="#">Community</a></li>
-					<li><a href="#">Support</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
+		<nav class="navbar navbar-default navbar-fixed-top"><!-- top nav -->
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#"><img src="images/hsblue.png" class="logo" alt="St. Francis of Assisi" /></a>
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			  </button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">I'm New</a></li>
+						<li><a href="#">Sacraments</a></li>
+						<li><a href="#">Community</a></li>
+						<li><a href="#">Give</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
 			</div>
 		</nav><!-- end of top nav -->
-		<!-- <h1><a href="#">St. Francis of Assisi Parish</a></h1> -->
 	</header><!-- end of header -->
 	
 	<section id="main"><!-- #main content area -->
-			<section id="content"><!-- #content -->
-				<article>
-						<section class="benefits leftblock"> 
-							<a href="#"><img class="thumbnail" src="images/FrGoode.jpg" title="Staff" alt="Staff"/><span class="caption"><b>Staff</b></span></a>
-							<p>St. Francis of Assisi Parish is a family. As disciples of Jesus, we are “children of God” and “brothers and sisters in Christ.” Jesus himself says, “Whoever does the will of my Father in heaven is my brother, and sister, and mother” (Matthew 12:50). We are here to serve you in your faith journey.</p>
-						</section>
-						<section class="benefits middleblock"> 
-							<a href="#"><img class="thumbnail" src="images/mass.jpg" title="Sacraments" alt="Sacraments"/><span class="caption"><b>Sacraments</b></span></a>
-							<p>The liturgy and the Eucharist are at the heart of our Catholic faith. We offer weekly and holiday liturgies and reconciliation. If you need information on the sacraments of baptism, first holy communion, confirmation, marriage, holy orders, or anointing of the sick, we are here to help you.</p>
-						</section>
-						<section class="benefits rightblock"> 
-							<a href="#"><img class="thumbnail" src="images/community.jpg" title="Community" alt="Community"/><span class="caption"><b>Community</b></span></a> 
-							<p>Our parish is a vibrant and diverse community of Catholics and seekers devoted to ongoing personal and communal growth and conversion to Jesus Christ. We warmly invite all to come as you are and join us for an event and see how God is calling you to belong to his family.</p>
-						</section>
-				</article>
-			</section><!-- end of #content -->
+		<section id="content"><!-- #content -->
+			<h1 class="quote"><i>We know that all things work for good for those who love God, who are called according to his purpose.
+			<br />
+			<small>- Romans 8:28</small></i>
+			</h1>
+			<article id="masstimes">
+				<h2>Mass Times</h2>
+				<div class="row cardspacing">
+					<div class="card col-sm-4">
+						<h3>Sunday / Domingo</h3>
+						<hr />
+						<p>7:30 AM English</p>
+						<p>9:30 AM Espa&#241;ol</p>
+						<p>11:30 AM English</p>
+						<p>1:30 PM Espa&#241;ol</p>
+					</div>
+					<div class="card col-sm-4">
+						<h3>Saturday / S&#225;bado</h3>
+						<hr />
+						<p>8:00 AM English</p>
+						<p>6:00 PM Espa&#241;ol Vigil</p>
+					</div>
+					<div class="card col-sm-4">
+						<h3>Weekdays / Semanales</h3>
+						<hr />
+						<p>8:00 AM English</p>
+						<p>6:00 PM English*</p>
+						<p>* Latin Mass on Fridays</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="row cardspacing">
+					<section class="col-sm-4"> 
+						<a href="#"><img class="thumbnail" src="images/FrGoode.jpg" title="Staff" alt="Staff"/><span class="caption"><b>Staff</b></span></a>
+						<p>St. Francis of Assisi Parish is a family. As disciples of Jesus, we are “children of God” and “brothers and sisters in Christ.” Jesus himself says, “Whoever does the will of my Father in heaven is my brother, and sister, and mother” (Matthew 12:50). We are here to serve you in your faith journey.</p>
+					</section>
+					<section class="col-sm-4"> 
+						<a href="#"><img class="thumbnail" src="images/mass.jpg" title="Sacraments" alt="Sacraments"/><span class="caption"><b>Sacraments</b></span></a>
+						<p>The liturgy and the Eucharist are at the heart of our Catholic faith. We offer weekly and holiday liturgies and reconciliation. If you need information on the sacraments of baptism, first holy communion, confirmation, marriage, holy orders, or anointing of the sick, we are here to help you.</p>
+					</section>
+					<section class="col-sm-4"> 
+						<a href="#"><img class="thumbnail" src="images/community.jpg" title="Community" alt="Community"/><span class="caption"><b>Community</b></span></a> 
+						<p>Our parish is a vibrant and diverse community of Catholics and seekers devoted to ongoing personal and communal growth and conversion to Jesus Christ. We warmly invite all to come as you are and join us for an event and see how God is calling you to belong to his family.</p>
+					</section>
+				</div>
+			</article>
+		</section><!-- end of #content -->
 	</section><!-- end of #main content -->
 	
-		<footer>
+	<footer>
 		<section id="footer-area">
 
-			<section id="footer-outer-block">
-					<aside class="footer-segment first">
-						<h4>Contact</h4>
-							<ul>
-								<li><a href="mailto:sfofassisi@sbcglobal.net">Email</a></li>
-								<li><a href="#">650-322-2152</a></li>
-								<li><a href="https://www.facebook.com/pages/St-Francis-Of-Assisi-East-Palo-Alto/184974148299526?fref=ts" target="_blank">Facebook</a></li>
-								</ul>
-					</aside><!-- end of #first footer segment -->
-
-					<aside class="footer-segment second">
-						<h4>Other Resources</h4>
-							<ul>
-								<li><a href="http://www.dsj.org/social-ministry/gabriel-project/" target="_blank">Gabriel Project - pregnant and need help</a></li>
-								<li><a href="http://www.dsj.org/NFP" target="_blank">NFP - Natural Family Planning</a></li>
-								<li><a href="http://www.sflifeandjustice.org/post_abortion_healing" target="_blank">Project Rachel - post abortion counseling</a></li>
-								<li><a href="http://couragerc.org" target="_blank">Courage - help with same sex attraction</a></li>
-							</ul>
-					</aside><!-- end of #second footer segment -->
-					
-					<aside class="footer-segment last">
-						<h4>&copy; 2015</h4>
+			<section id="footer-outer-block" class="row">
+				<aside class="footer-segment col-sm-4 col-xs-12">
+					<h4>Contact</h4>
 						<ul>
-							<li><a href="#">sfofassisi.org</a></li>
-							<li>All rights reserved.</li>
+							<li><a href="mailto:sfofassisi@sbcglobal.net">Email</a></li>
+							<li>650-322-2152</li>
+							<li><a href="https://www.facebook.com/pages/St-Francis-Of-Assisi-East-Palo-Alto/184974148299526?fref=ts" target="_blank">Facebook</a></li>
+							</ul>
+				</aside><!-- end of #first footer segment -->
+
+				<aside class="footer-segment col-sm-4 col-xs-12">
+					<h4>Other Resources</h4>
+						<ul>
+							<li><a href="http://www.dsj.org/social-ministry/gabriel-project/" target="_blank">Gabriel Project - pregnant and need help</a></li>
+							<li><a href="http://www.dsj.org/NFP" target="_blank">NFP - Natural Family Planning</a></li>
+							<li><a href="http://www.sflifeandjustice.org/post_abortion_healing" target="_blank">Project Rachel - post abortion counseling</a></li>
+							<li><a href="http://couragerc.org" target="_blank">Courage - help with same sex attraction</a></li>
 						</ul>
-					</aside><!-- end of #fourth footer segment -->
+				</aside><!-- end of #second footer segment -->
+				
+				<aside class="footer-segment col-sm-4 col-xs-12">
+					<h4>&copy; 2015</h4>
+					<ul>
+						<li><a href="#">sfofassisi.org</a></li>
+						<li>All rights reserved.</li>
+					</ul>
+				</aside><!-- end of #fourth footer segment -->
 
 			</section><!-- end of footer-outer-block -->
-
 		</section><!-- end of footer-area -->
 	</footer>
 	
 </div><!-- #wrapper -->
 <!-- Free template created by http://freehtml5templates.com -->
+
+<!-- Latest compiled and minified jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>

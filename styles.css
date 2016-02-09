@@ -15,7 +15,7 @@ body {
 line-height: 1;
 background: #999;
 font-family: Verdana, Arial, Helvetica, sans-serif;
-color: #666;
+color: gray;
 font-size: 14px;
 line-height: 18px;
 }
@@ -31,18 +31,57 @@ margin-bottom: 10px;*/
 
 nav {
 width: 100vw;
-height: 50px;
-/*margin: 0 auto;*/
-background: rgba(0,0,0,.6);
+height: 84px;
 position: fixed;
+font-size: 18px;
+text-align: right;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	}
+}
+
+.logo {
+height: 74px;
+width: auto;
+margin-top: -10px;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
+color: #2cbae6;	
+}
+.navbar-brand {
+font-size: 22px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #2cbae6;
+}
+
+.navbar-brand {
+width: inherit;
+}
+
+.navbar .navbar-nav {
+display: inline-block;
+float: none;
+vertical-align: top;
 }
 
 header {
-/*width: 100vw;*/
 height: 50vw;
-margin: 0 auto;
-background: #000 url(images/SFofA.jpg) no-repeat left center;
+margin: 84px auto 0 auto;
+background: #000 url(images/insideassisi.jpg) no-repeat left center;
 background-size: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+	height: 65vw;
+	}
 }
 
 #main {
@@ -57,6 +96,46 @@ overflow: hidden;
 width: 940px;*/
 }
 
+.quote {
+color: #2cbae6;
+text-align: center;
+padding: 1em 1em 0 1em;
+}
+
+#masstimes {
+background-color: #777777;
+color: #ffffff;
+font-size: 22px;
+height: 15em;
+text-align: center;
+}
+
+#masstimes h2 {
+color: #ffffff;
+}
+
+#masstimes h3 {
+font-size: 22px;
+}
+
+.cardspacing {
+margin: 0 auto;
+position: relative;
+max-width: 980px !important;
+}
+
+.card {
+margin: 10px 10px 10px 10px;
+border: 1px solid #ffffff;
+text-align: center;
+min-height: 213px;
+}
+
+.card hr {
+width: 50%;
+margin: 0 auto 10px auto;
+}
+
 footer {
 /*width: 940px;*/
 margin: 0 auto;
@@ -68,11 +147,10 @@ clear: both;
 h1,h2,h3,h4,h5,h6 {
 font-weight: bold;
 clear: both;
-color: #000;
 }
 
 a:link, a:visited {
-color:#314FDD;
+color:#1bafdf;
 text-decoration: none;
 }
 
@@ -86,38 +164,13 @@ margin-bottom: 18px;
 
 li {
 padding-left: 5px;
+color: #2cbae6;
 }
 
-/* nav */
-
-nav .menu {
-/*font-weight: bold;*/
-}
-
-nav .menu ul {
-margin: 0;
-padding: 14px 0 0 20px;
-list-style: none;
-line-height: normal;
-}
-
-nav .menu li {
-display: block;
-float: left;
-}
-
-nav .menu a {
-display: block;
-float: left;
-margin-right: 5px;
-padding: 0px 15px;
-text-decoration: none;
-font-size: 18px;
-color: #C8D3FE;
-}
-
-nav .menu a:hover {
-text-decoration: underline;
+@media (min-width: 768px) {
+	#masstimes .col-sm-4 {
+	    width: 31.222222%;
+	}
 }
 
 /** HEADER */
@@ -140,8 +193,17 @@ color: #314FDD;
 /** ARTICLES **/
 
 article {
-/*padding: 20px 30px 5px 40px;*/
-/*padding: 20px 30px 5px 30px;*/
+padding: 2vw 0 2vw 0;
+}
+
+@media only screen and (max-width: 768px) {
+	article {
+	padding: 0;
+	}
+	.row {
+	margin-left: 0;
+	margin-right: 0;
+	}
 }
 
 article img {
@@ -151,11 +213,8 @@ border: none;
 #content h1, h2, h3, h4, h5, h6 {
 color: #2cbae6;
 line-height: 1.5em;
-margin: 0 0px 20px 0;
-}
-
-#content h1, h2, h3 {
-padding-left: 10px;
+margin: 10px 0px 10px 0;
+font-weight: 300;
 }
 
 .alignleft, img.alignleft {
@@ -186,33 +245,29 @@ margin-bottom: 12px;
 /* inline blocks of images and captions */
 
 .benefits {
-display: inline-block;
-vertical-align: top;
-/*width: 250px;*/
-width: 29vw;
-text-align: left;
-padding: 2vw;
+margin: 0 auto;
+position: relative;
+max-width: 980px !important;
 }
 
 @media only screen and (max-width: 768px) {
 	.benefits {
 	width: 100vw;
-	text-align: left;
 	padding: 0;
 	}
 }
 
-.benefits .thumbnail {
+.thumbnail {
 border: none;
-width: 29vw;
+width: 100%;
 /*height: 157px;*/
-height: 18vw;
+height: 19vw;
 }
 
 @media only screen and (max-width: 768px) {
 	.benefits .thumbnail {
 	border: none;
-	width: 90vw;
+	width: 100%;
 	height: auto;
 	padding: 5vw;
 	}
@@ -268,14 +323,14 @@ overflow: hidden;
 
 .footer-segment {
 float: left;
-width: 29vw;
+/*width: 29vw;*/
 text-align: center;
 padding: 2vw;
 }
 
 @media only screen and (max-width: 768px) {
 	.footer-segment {
-	width: 98vw;
+	/*width: 98vw;*/
 	text-align: center;
 	padding: 2vw;
 	}
@@ -289,7 +344,7 @@ line-height: 1.5em;
 }
 
 footer a:link, footer a:visited {
-color: #C8D3FE;
+color: #2cbae6;
 }
 
 footer p {
