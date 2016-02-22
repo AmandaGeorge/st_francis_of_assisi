@@ -51,7 +51,8 @@ margin-top: -10px;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
-color: #2cbae6;	
+color: #2cbae6;
+background-color: #ffffff;
 }
 .navbar-brand {
 font-size: 22px;
@@ -74,7 +75,7 @@ vertical-align: top;
 header {
 height: 40vw;
 margin: 84px auto 0 auto;
-background: #000 url(images/insideassisi.jpg) no-repeat left center;
+background: #000 url(images/insideassisi.JPG) no-repeat left center;
 background-size: 100vw;
 }
 
@@ -94,6 +95,19 @@ overflow: hidden;
 #content {
 /*float: right;
 width: 940px;*/
+}
+
+td {
+padding-bottom: 20px;
+}
+
+td strong {
+font-weight: 300;
+}
+
+.quoteDiv90 {
+width: 90%;
+margin: 0 auto;
 }
 
 .quote {
@@ -155,7 +169,6 @@ margin: 15px auto;
 
 .bluebg {
 background-color: #95dcf2;
-padding: 0 80px;
 }
 
 .graytext {
@@ -183,6 +196,15 @@ clear: both;
 h1,h2,h3,h4,h5,h6 {
 font-weight: bold;
 clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+	font-size: 30px;
+	}
+	h3 {
+	font-size: 25px;
+	}
 }
 
 a:link, a:visited {
